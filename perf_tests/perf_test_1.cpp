@@ -41,7 +41,7 @@ int main()
 {
   Display disp{ 64, 64 };
 
-  for (std::uint8_t frame = 0; true; ++frame) {
+  for (std::uint8_t frame = 0; frame < 255; ++frame) {
     for (int x = 0; x < disp.width; ++x) {
       for (int y = 0; y < disp.height; ++y) {
         disp.write_pixel(
